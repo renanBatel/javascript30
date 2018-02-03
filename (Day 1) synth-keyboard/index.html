@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Synth Keyboard</title>
+</head>
+<body>
+    <main>
+        <div class="synth-holder">
+            <div class="synth-panel">
+                <div class="synth-top">
+                    <h1>Synth Keyboard</h1>
+                    <div>
+                        <div class="wave-settings">
+                            <h4>Wave Type:</h4>
+                            <a onclick="changeWaveType('sine')" data-wave="sine" class="synth-button active">Sine</a>
+                            <a onclick="changeWaveType('triangle')" data-wave="triangle" class="synth-button">Triangle</a>
+                            <a onclick="changeWaveType('square')" data-wave="square" class="synth-button">Square</a>
+                        </div>
+                        <div>#</div>
+                    </div>
+                </div>
+            </div>
+            <div class="synth-keys">
+                <div class="top-keys">
+                    <div data-key="a" data-note="C#4" class="top-key key"><span>A</span></div>
+                    <div data-key="s" data-note="D#4" class="top-key key"><span>S</span></div>
+                    <div data-key="f" data-note="F#4" class="top-key key"><span>F</span></div>
+                    <div data-key="g" data-note="G#4" class="top-key key"><span>G</span></div>
+                    <div data-key="h" data-note="A#4" class="top-key key"><span>H</span></div>
+                    <div data-key="k" data-note="C#5" class="top-key key"><span>K</span></div>
+                    <div data-key="l" data-note="D#5" class="top-key key"><span>L</span></div>
+                    <div data-key="~" data-note="F#5" class="top-key key"><span>~</span></div>
+                </div>
+                <div class="bottom-keys">
+                    <div data-key="\" data-note="C4" class="bottom-key key"><span>\</span></div>
+                    <div data-key="z" data-note="D4" class="bottom-key key"><span>Z</span></div>
+                    <div data-key="x" data-note="E4" class="bottom-key key"><span>X</span></div>
+                    <div data-key="c" data-note="F4" class="bottom-key key"><span>C</span></div>
+                    <div data-key="v" data-note="G4" class="bottom-key key"><span>V</span></div>
+                    <div data-key="b" data-note="A4" class="bottom-key key"><span>B</span></div>
+                    <div data-key="n" data-note="B4" class="bottom-key key"><span>N</span></div>
+                    <div data-key="m" data-note="C5" class="bottom-key key"><span>M</span></div>
+                    <div data-key="," data-note="D5" class="bottom-key key"><span>,</span></div>
+                    <div data-key="." data-note="E5" class="bottom-key key"><span>.</span></div>
+                    <div data-key=";" data-note="F5" class="bottom-key key"><span>;</span></div>
+                    <div data-key="/" data-note="G5" class="bottom-key key"><span>/</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
