@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Variables</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="panel">
+                <h1>CSS Cube</h1>
+                <label for="cube-size">Size</label>
+                <input type="range" name="cube-size" min="80" max="360" step="1" data-suffix="px" value="220">
+                <label for="rotateX">Rotate X</label>
+                <input type="range" name="rotateX" min="0" max="360" data-suffix="deg" value="0">
+                <label for="rotateY">Size</label>
+                <input type="range" name="rotateY" min="0" max="360" data-suffix="deg" value="0">
+            </div>
+            <div class="cube-panel">
+                <div class="cube-container">
+                    <div class="cube">
+                        <figure class="front"></figure>
+                        <figure class="back"></figure>
+                        <figure class="right"></figure>
+                        <figure class="left"></figure>
+                        <figure class="top"></figure>
+                        <figure class="bottom"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
